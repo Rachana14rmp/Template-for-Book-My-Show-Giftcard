@@ -1,0 +1,282 @@
+<!--{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>  
+</head>
+<body>
+    {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong> {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+    <h1>Book my show giftcard</h1>
+    <button type="submit" ><a href="/signup">SignUp</a></button>
+    <button type="submit"><a href="/signin">SignIn</a></button>
+  
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+ <link rel="stylesheet" href="fontawesome-free-5.11.2-web (1)\fontawesome-free-5.11.2-web\css\all.css" type="text/css"/>
+ <title>Welcome</title>
+ <style>
+  body{
+ padding:0;
+ display: flex;
+ margin:0;
+ background:linear-gradient(to right, #6E1FDA, #27006A);
+}
+.main-container{
+ width:100%;
+ height:50px;
+}
+.sub-container{
+ margin:55px auto;
+ height:50px;
+ width:80px;
+ background-color:#170058;
+ border-radius:12px;
+ box-shadow: 1px -3px 12px 7px #36007E;
+ 
+}
+
+.logo{
+  padding:9px 7px 8px 0px;
+ margin:0px 0px 0px 30px;
+ width:20px;
+ height:20px;
+ border-radius:50%;
+ 
+}
+.logo-text{
+ width: 20px;
+ height: 20px;
+ font-family:lato;
+}
+.logo, .logo-text{
+ display:inline;
+ 
+}
+.logo-container{
+ padding-top:30px;
+
+}
+.wel{
+ margin-top:85px;
+ text-align:center;
+ color:#2ADCFF;
+ font-family:lato;
+ font-weight:900;
+ font-weight:bold;
+ font-size:50px;
+}
+@font-face{
+ font-family:"lato";
+ src:"Lato-Regular.ttf";
+}
+.ready{
+ margin-top:-20px;
+ text-align:center;
+ color:white;
+ font-family:lato;
+ font-weight:100;
+ font-size:20px;
+ font-style:italic;
+}
+.btn-left{
+ padding:13px 20px 13px 20px;
+ border-radius:38px;
+ border-style:none;
+ font-weight:900;
+ font-size:15px;
+ font-family:lato;
+ outline:none;
+ background-color:#2ADCFF;
+ color:white;
+ margin-left:110px;
+}
+.btn-right{
+ margin-left:100px;
+ padding:13px 28px 13px 20px;
+ border-radius:38px;
+ border-style:none;
+ font-weight:900;
+ font-size:15px;
+ font-family:lato;
+ outline:none;
+ background-color:#2ADCFF;
+ color:white;
+ 
+}
+.btn-left:hover{
+ background-color:white;
+ color:#2ADCFF;
+ 
+}
+.btn-right:hover{
+ background-color:white;
+ color:#2ADCFF;
+}
+.right-sign-in{
+ margin:0px 0px 0px 0px;
+ width:50%;
+ height:100%;
+ float:right;
+ background-color:white;
+ box-shadow: 1px -3px 12px 3px #f1e6ff;
+ border-radius:5px;
+ position:relative;
+ right:-100px;
+ 
+}
+.sign-up-heading{
+ padding-top:10px;
+ text-align:center;
+ font-family:lato;
+ color:#230162;
+}
+.left-sign-in{
+ margin:0px 0px 0px 0px;
+ width:49%;
+ height:100%;
+ float:left;
+ background-color:white;
+ box-shadow: 1px -3px 12px 3px #f1e6ff;
+ border-radius:5px;
+ position:relative;
+ left:-100px;
+ 
+}
+.sign-in{
+ height:100%;
+ width:100%;
+ 
+}
+.dots{
+ margin-top:-30px;
+ text-align:center;
+ font-size:30px;
+ color:#230162;
+}
+.txt{
+ font-family:lato;
+ display:flex;
+ margin-top:10px;
+ padding:15px 130px 15px 20px;
+    background:none; 
+ background-color:rgba(35, 1, 98, 0.4);
+ color:#230162;
+ border-style:solid;
+ border-radius:30px;
+ outline:none;
+ border-color:#230162;
+}
+.txt:hover{
+ 
+ padding:15px 150px 15px 20px;
+ transition:10;
+ background-color:white;
+}
+.text:focus{
+ padding:15px 150px 15px 20px;
+ transition:10;
+ background-color:white;
+ color:#230162;
+}
+::placeholder{
+ color:#230162;
+ font-weight:500;
+}
+.sign-up-input{
+ margin-left:48px;
+
+}
+.red{
+  border-color:white;
+ border-style: solid;
+ border-width: 3px;
+ margin-right: 500px;
+ margin-left: 500px;
+ margin-bottom: 250px;
+ margin-top: 80px;
+
+}
+.btn{
+ display:flex;
+ margin-top:15px;
+ margin-left:60px;
+ padding:15px 50px 15px 50px;
+    background:none; 
+ background-color:rgba(35, 1, 98, 0.4);
+ color:white;
+ border-style:solid;
+ border-radius:30px;
+ outline:none;
+ border-color:#230162;
+ text-align:center;
+ font-family:lato;
+ color:#230162;
+ font-size:15px;
+ font-weight:900;
+}
+.btn:hover{
+ background-color:white;
+}
+.log-in{
+  height:100%;
+ width:100%;
+}
+.img{
+ margin:40px 0px 0px 50px;
+}
+.cont{
+ margin:20px 0px 0px 140px;
+}
+ </style>
+</head>
+
+<body>
+  {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong> {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+  {% endfor %} 
+ <div class="main-container">
+    <!--<div class="sub-container">-->
+    <div class="" style="display:block" id="main">
+      <div class="logo-container">
+        <div class="logo"><i class="fas fa-house-damage" style="color:black;font-size:20px;padding:8px 0px 0px 8px"></i></div>
+        <div class="logo-text"><img src="{% static 'mysite/images/bms1.png' %}" style="width: 100px;height:70px;"></div>
+      </div>
+    
+      <div class="red">
+        <div><h1 class="wel">Welcome</h1></div>
+        <h3 class="ready">Are you ready for great experience?</h3>
+        <span><br></span>
+        <div>
+          <button class="btn-left" id="sign-up-button"><a href="/signup">Sign Up</a><i class="fas fa-arrow-right" style="padding-left:6px;"></i></button>
+          <span></span>
+          <button class="btn-right" id="sign-in-button"><i class="fas fa-arrow-left" style="padding-right:6px;"></i><a href="/signin">Sign In</a></button><br>
+          <div><br><br><br></div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ </div>
+</body>
+</html>
